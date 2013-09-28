@@ -1,6 +1,7 @@
-﻿using PhotoUtil.Enums;
+﻿using System;
+using MediaOrganizer.Core;
+using MediaOrganizer.Core.Enums;
 using ReactiveUI;
-using System;
 
 namespace PhotoUtil.UI.ViewModels
 {

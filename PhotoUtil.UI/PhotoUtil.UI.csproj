@@ -124,6 +124,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MediaOrganizer.Core\MediaOrganizer.Core.csproj">
+      <Project>{0AFBB7F7-47B6-4C42-A5F0-388C259F16A8}</Project>
+      <Name>MediaOrganizer.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PhotoUtil\PhotoUtil.PsCmd.csproj">
       <Project>{2AD09FFB-7302-45A3-8875-C749DB734D2F}</Project>
       <Name>PhotoUtil.PsCmd</Name>

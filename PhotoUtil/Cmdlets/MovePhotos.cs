@@ -1,5 +1,6 @@
 ﻿using System.Management.Automation;
-using PhotoUtil.Enums;
+using MediaOrganizer.Core;
+using MediaOrganizer.Core.Enums;
 
 namespace PhotoUtil.Cmdlets
 {

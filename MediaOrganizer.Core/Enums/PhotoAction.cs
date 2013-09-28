@@ -1,4 +1,4 @@
-namespace PhotoUtil.Enums
+namespace MediaOrganizer.Core.Enums
 {
     public enum PhotoAction
     {

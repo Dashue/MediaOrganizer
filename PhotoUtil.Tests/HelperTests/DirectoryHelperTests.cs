@@ -1,5 +1,5 @@
 ﻿using System;
-using PhotoUtil.Helpers;
+using MediaOrganizer.Core.Helpers;
 using Xunit;
 
 namespace PhotoUtil.Tests.HelperTests

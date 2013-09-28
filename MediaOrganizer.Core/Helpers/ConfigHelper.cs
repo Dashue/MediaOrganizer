@@ -1,4 +1,4 @@
-﻿namespace PhotoUtil.Helpers
+﻿namespace MediaOrganizer.Core.Helpers
 {
     public static class ConfigHelper
     {

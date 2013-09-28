@@ -1,11 +1,11 @@
-using PhotoUtil.Enums;
-using PhotoUtil.Extensions;
-using PhotoUtil.Helpers;
+using MediaOrganizer.Core.Enums;
+using MediaOrganizer.Core.Extensions;
+using MediaOrganizer.Core.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace PhotoUtil
+namespace MediaOrganizer.Core
 {
     public static class PhotoUtility
     {

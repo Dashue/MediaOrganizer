@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using PhotoUtil.Helpers;
+using MediaOrganizer.Core.Helpers;
 
-namespace PhotoUtil.Extensions
+namespace MediaOrganizer.Core.Extensions
 {
     public static class StringExtensions
     {

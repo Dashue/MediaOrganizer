@@ -1,7 +1,7 @@
 using System;
 using ExifLib;
 
-namespace PhotoUtil.Helpers
+namespace MediaOrganizer.Core.Helpers
 {
 	public static class DateHelper
 	{

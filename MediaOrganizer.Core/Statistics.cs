@@ -1,4 +1,4 @@
-namespace PhotoUtil
+namespace MediaOrganizer.Core
 {
     internal class Statistics
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PhotoUtil.Helpers
+namespace MediaOrganizer.Core.Helpers
 {
 	internal static class DirectoryHelper
 	{
