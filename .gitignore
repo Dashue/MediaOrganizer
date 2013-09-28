@@ -1,0 +1,15 @@
+
+/_ReSharper.PhotoUtil
+/PhotoUtil.5.0.ReSharper.user
+*/bin
+*/obj
+*ncrunch*
+*.user
+*.suo
+.mdf
+.ldf
+TestResults
+
+
+/packages
+!/packages/repositories.config

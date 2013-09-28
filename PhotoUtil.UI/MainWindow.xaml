@@ -1,0 +1,26 @@
+﻿<Window x:Class="PhotoUtil.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PhotoUtil.UI.ViewModels" mc:Ignorable="d"
+        Title="Photo Organizer" Height="350" Width="525" d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
+    <StackPanel>
+        <Label>Path</Label> 
+        <Button Click="SelectPath">Select folder</Button>
+        <TextBox Text="{Binding Path, UpdateSourceTrigger=PropertyChanged}" />
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>
+
+        </Grid>
+    </StackPanel>
+</Window>
