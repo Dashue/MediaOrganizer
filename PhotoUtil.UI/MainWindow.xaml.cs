@@ -1,6 +1,5 @@
 ﻿using PhotoUtil.UI.ViewModels;
 using System.Windows;
-using System.Windows.Forms;
 
 namespace PhotoUtil.UI
 {
