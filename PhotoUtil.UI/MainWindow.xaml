@@ -10,17 +10,6 @@
         <Button Click="SelectPath">Select folder</Button>
         <TextBox Text="{Binding Path, UpdateSourceTrigger=PropertyChanged}" />
         
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-
-            <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>
-
-        </Grid>
+        <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>
     </StackPanel>
 </Window>
