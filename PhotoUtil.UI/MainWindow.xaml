@@ -7,7 +7,7 @@
         Title="Photo Organizer" Height="350" Width="525" d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
     <StackPanel>
         <Label>Path</Label> 
-        <Button Click="SelectPath">Select folder</Button>
+        <Button Command="{Binding SelectPath}">Select folder</Button>
         <TextBox Text="{Binding Path}" />
         
         <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>

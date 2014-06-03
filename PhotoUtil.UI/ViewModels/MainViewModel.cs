@@ -1,13 +1,19 @@
 ﻿using ReactiveUI;
 using System;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace PhotoUtil.UI.ViewModels
 {
     public class MainViewModel : ReactiveObject
     {
+        private FolderBrowserDialog dialog;
+
+
         public MainViewModel()
         {
+            dialog = new FolderBrowserDialog();
+
             MovePhotos = new ReactiveCommand(
                 this.WhenAny(x => x.Path, s => false == string.IsNullOrWhiteSpace(s.Value)));
 
@@ -25,6 +31,18 @@ namespace PhotoUtil.UI.ViewModels
 
                 Status = ((int)(end - start).TotalSeconds).ToString() + " Seconds";
             }).Subscribe();
+
+            SelectPath = new ReactiveCommand();
+
+            SelectPath.Subscribe(x =>
+            {
+                DialogResult result = dialog.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    Path = dialog.SelectedPath;
+                }
+            });
         }
 
         private string _path;
@@ -37,6 +55,7 @@ namespace PhotoUtil.UI.ViewModels
             }
         }
 
+        public ReactiveCommand SelectPath { get; set; }
         public ReactiveCommand MovePhotos { get; set; }
 
         private string _status;
