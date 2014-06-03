@@ -1,6 +1,7 @@
-﻿using ReactiveUI;
+﻿using MediaOrganizer.Core;
+using MediaOrganizer.Core.Enums;
+using ReactiveUI;
 using System;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace PhotoUtil.UI.ViewModels
@@ -25,8 +26,7 @@ namespace PhotoUtil.UI.ViewModels
             MovePhotos.RegisterAsyncAction(_ =>
             {
                 var start = DateTime.Now;
-                //PhotoUtility.FixPhotos(Path, PhotoAction.Move);
-                Thread.Sleep(5000);
+                PhotoUtility.FixPhotos(Path, PhotoAction.Move);
                 var end = DateTime.Now;
 
                 Status = ((int)(end - start).TotalSeconds).ToString() + " Seconds";
