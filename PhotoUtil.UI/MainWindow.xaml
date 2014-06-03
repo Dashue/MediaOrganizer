@@ -11,5 +11,6 @@
         <TextBox Text="{Binding Path, UpdateSourceTrigger=PropertyChanged}" />
         
         <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>
+        <Label VerticalAlignment="Bottom" Content="{Binding Status}"></Label>
     </StackPanel>
 </Window>
