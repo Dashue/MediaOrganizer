@@ -8,7 +8,7 @@
     <StackPanel>
         <Label>Path</Label> 
         <Button Click="SelectPath">Select folder</Button>
-        <TextBox Text="{Binding Path, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Text="{Binding Path}" />
         
         <Button HorizontalAlignment="Center" Command="{Binding MovePhotos}">Move Photos</Button>
         <Label VerticalAlignment="Bottom" Content="{Binding Status}"></Label>
